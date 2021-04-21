@@ -42,7 +42,7 @@ namespace Core_Mvc_Sample.Controllers
         /// </summary>
         public void WebTest()
         {
-            string reqUrl = "http://www.samsungwbc.co.kr/_REQUEST_/reqClipService2.jsp";
+            string reqUrl = "http://naver.com";
             var reqParams = new List<KeyValuePair<string, object>>();
             reqParams.Add(new KeyValuePair<string, object>("mode", "1000"));
             reqParams.Add(new KeyValuePair<string, object>("USERID", "test"));
