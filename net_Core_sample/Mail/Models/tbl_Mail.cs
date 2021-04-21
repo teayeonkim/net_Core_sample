@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Mail
+namespace Mail.Models
 {
     public class tbl_Mail
     {

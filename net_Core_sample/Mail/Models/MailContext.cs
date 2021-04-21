@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
 
-namespace Mail
+namespace Mail.Models
 {
     public class MailContext : DbContext
     {

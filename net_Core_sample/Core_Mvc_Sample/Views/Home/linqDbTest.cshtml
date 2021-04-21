@@ -1,0 +1,32 @@
+﻿@model List<Mail.Models.tbl_Mail>
+@{
+    ViewData["Title"] = "linqDbTest";
+}
+
+
+<div class="wrapper wrapper-content animated fadeInRight ibox-content">
+
+
+    <input type="file" id="uploadFile" />
+
+    <table class="table table-striped">
+        <thead>
+            <tr>번호</tr>
+            <tr>발송제목</tr>
+            <tr>내용</tr>
+            <tr>등록</tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.num </td>
+                    <td>@item.title </td>
+                    <td>@item.Content </td>                 
+                    <td><a asp-action="test" asp-controller="t" asp-route-orderId="@item.num">링크 연결</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

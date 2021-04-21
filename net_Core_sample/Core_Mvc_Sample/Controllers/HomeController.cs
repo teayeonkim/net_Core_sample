@@ -2,7 +2,9 @@
 using BaseFramework.Utilities;
 using BaseFramework.Web;
 using Core_Mvc_Sample.Models;
+using Mail.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
@@ -16,9 +18,14 @@ namespace Core_Mvc_Sample.Controllers
     {
         private readonly ILogger<HomeController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public MailContext Maildb { get; }
+
+        public HomeController(ILogger<HomeController> logger , MailContext maildb)
         {
             _logger = logger;
+
+            Maildb = maildb;
+
         }
 
         public IActionResult Index()
@@ -31,10 +38,6 @@ namespace Core_Mvc_Sample.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
-        {
-            return View();
-        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
@@ -131,6 +134,17 @@ namespace Core_Mvc_Sample.Controllers
             return View();
         }
 
+        #endregion
+
+        #region DB 비동기 호출 테스트 
+
+        public async Task<IActionResult> linqDbTest()
+        {
+            // 비동기 호출 진행 
+            var test = await Maildb.tbl_Mail.OrderBy(x => x.num).Take(10000).ToListAsync();
+
+            return View(test);
+        }
         #endregion
     }
 }
