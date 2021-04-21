@@ -20,6 +20,12 @@ namespace Core_Mvc_Sample
 {
     public class Startup
     {
+        /*
+       * IIS 셋팅시 https://dotnet.microsoft.com/download/dotnet/thank-you/runtime-aspnetcore-5.0.5-windows-hosting-bundle-installer 설치 진행 
+       * https://dotnet.microsoft.com/learn/dotnet/hello-world-tutorial/install
+       * IIS 응용프로그램 풀에서 .NET CLR 버전  관리코드 없음 체크
+       */
+
         public Startup(IConfiguration configuration)
         {
             var builder = new ConfigurationBuilder()
@@ -107,6 +113,10 @@ namespace Core_Mvc_Sample
             app.UseRouting();
 
             app.UseAuthorization();
+
+            #region 세션
+            app.UseSession();
+            #endregion
 
             app.UseEndpoints(endpoints =>
             {

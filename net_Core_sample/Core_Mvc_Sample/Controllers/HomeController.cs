@@ -23,6 +23,11 @@ namespace Core_Mvc_Sample.Controllers
 
         public IActionResult Index()
         {
+            //세션 설정
+            SessionTest();
+            //쿠키 설정
+            CookieTest();
+
             return View();
         }
 
@@ -76,6 +81,8 @@ namespace Core_Mvc_Sample.Controllers
                 throw new Exception(e.ToString());
             }
         }
+        #region
+
 
         /// <summary>
         /// 세션 테스트
@@ -86,48 +93,44 @@ namespace Core_Mvc_Sample.Controllers
             //세션 처리 방법
 
 
-            SessionHelper.clear();
+          //  SessionHelper.clear();
 
-            SessionHelper.Set("tese", "1");
+            SessionHelper.Set("test", "Session_" + DateTime.Now.ToString("yyyyMMddhhmmss"));
 
-            SessionHelper.Set("tese1", "2");
+            SessionHelper.Set("test1", "Session_1_" + DateTime.Now.ToString("yyyyMMddhhmmss"));
 
-            SessionHelper.Set("tese2", "3");
+            SessionHelper.Set("test2", "Session_2_" + DateTime.Now.ToString("yyyyMMddhhmmss"));
 
-            SessionHelper.Set("tese3", "4");
+            SessionHelper.Set("test3", "Session_3_" + DateTime.Now.ToString("yyyyMMddhhmmss"));
 
-            SessionHelper.Set("tese4", "5");
+            SessionHelper.Set("test4", "Session_4_" + DateTime.Now.ToString("yyyyMMddhhmmss"));
 
-            string aasd = SessionHelper.Get("tese");
-
-
-            string a2 = SessionHelper.Get("tese1");
-
-            string a3 = SessionHelper.Get("tese2");
-
-            string a4 = SessionHelper.Get("tese3");
-
-            string a5 = SessionHelper.Get("tese4");
-
-            string a6 = SessionHelper.Get("tese5");
 
             #endregion
         }
 
+        public IActionResult Session()
+        {
+            return View();
+        }
+
+        #endregion
+        #region 쿠키 테스트 
         /// <summary>
         /// 쿠키 테스트
         /// </summary>
         public void CookieTest()
         {
-            SessionHelper.SetCookie("Cookie1", "1" + DateTime.Now.ToString("yyyyMMddhhmiss"));
-            SessionHelper.SetCookie("Cookie2", "2" + DateTime.Now.ToString("yyyyMMddhhmiss"));
-            SessionHelper.SetCookie("Cookie3", "3" + DateTime.Now.ToString("yyyyMMddhhmiss"));
-
-
-            string test = SessionHelper.GetCookie("Cookie1");
-
-            SessionHelper.RemoveCookie("Cookie2");
+            SessionHelper.SetCookie("Cookie1", "1" + DateTime.Now.ToString("yyyyMMddhhmmss"));
+            SessionHelper.SetCookie("Cookie2", "2" + DateTime.Now.ToString("yyyyMMddhhmmss"));
+            SessionHelper.SetCookie("Cookie3", "3" + DateTime.Now.ToString("yyyyMMddhhmmss"));
         }
 
+        public IActionResult Cookie()
+        {
+            return View();
+        }
+
+        #endregion
     }
 }
