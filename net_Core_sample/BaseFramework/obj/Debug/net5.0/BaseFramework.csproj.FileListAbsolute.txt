@@ -1,0 +1,14 @@
+E:\GitHub\net_Core_sample\net_Core_sample\BaseFramework\bin\Debug\net5.0\BaseFramework.deps.json
+E:\GitHub\net_Core_sample\net_Core_sample\BaseFramework\bin\Debug\net5.0\BaseFramework.runtimeconfig.json
+E:\GitHub\net_Core_sample\net_Core_sample\BaseFramework\bin\Debug\net5.0\BaseFramework.runtimeconfig.dev.json
+E:\GitHub\net_Core_sample\net_Core_sample\BaseFramework\bin\Debug\net5.0\BaseFramework.dll
+E:\GitHub\net_Core_sample\net_Core_sample\BaseFramework\bin\Debug\net5.0\ref\BaseFramework.dll
+E:\GitHub\net_Core_sample\net_Core_sample\BaseFramework\bin\Debug\net5.0\BaseFramework.pdb
+E:\GitHub\net_Core_sample\net_Core_sample\BaseFramework\obj\Debug\net5.0\BaseFramework.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitHub\net_Core_sample\net_Core_sample\BaseFramework\obj\Debug\net5.0\BaseFramework.AssemblyInfoInputs.cache
+E:\GitHub\net_Core_sample\net_Core_sample\BaseFramework\obj\Debug\net5.0\BaseFramework.AssemblyInfo.cs
+E:\GitHub\net_Core_sample\net_Core_sample\BaseFramework\obj\Debug\net5.0\BaseFramework.csproj.CoreCompileInputs.cache
+E:\GitHub\net_Core_sample\net_Core_sample\BaseFramework\obj\Debug\net5.0\BaseFramework.dll
+E:\GitHub\net_Core_sample\net_Core_sample\BaseFramework\obj\Debug\net5.0\ref\BaseFramework.dll
+E:\GitHub\net_Core_sample\net_Core_sample\BaseFramework\obj\Debug\net5.0\BaseFramework.pdb
+E:\GitHub\net_Core_sample\net_Core_sample\BaseFramework\obj\Debug\net5.0\BaseFramework.genruntimeconfig.cache

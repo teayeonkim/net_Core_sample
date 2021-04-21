@@ -4,14 +4,14 @@
     "E:\\GitHub\\net_Core_sample\\net_Core_sample\\Core_Mvc_Sample\\Core_Mvc_Sample.csproj": {}
   },
   "projects": {
-    "E:\\GitHub\\net_Core_sample\\net_Core_sample\\Core_Mvc_Sample\\Core_Mvc_Sample.csproj": {
+    "E:\\GitHub\\net_Core_sample\\net_Core_sample\\BaseFramework\\BaseFramework.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GitHub\\net_Core_sample\\net_Core_sample\\Core_Mvc_Sample\\Core_Mvc_Sample.csproj",
-        "projectName": "Core_Mvc_Sample",
-        "projectPath": "E:\\GitHub\\net_Core_sample\\net_Core_sample\\Core_Mvc_Sample\\Core_Mvc_Sample.csproj",
+        "projectUniqueName": "E:\\GitHub\\net_Core_sample\\net_Core_sample\\BaseFramework\\BaseFramework.csproj",
+        "projectName": "BaseFramework",
+        "projectPath": "E:\\GitHub\\net_Core_sample\\net_Core_sample\\BaseFramework\\BaseFramework.csproj",
         "packagesPath": "C:\\Users\\clip-815\\.nuget\\packages\\",
-        "outputPath": "E:\\GitHub\\net_Core_sample\\net_Core_sample\\Core_Mvc_Sample\\obj\\",
+        "outputPath": "E:\\GitHub\\net_Core_sample\\net_Core_sample\\BaseFramework\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
@@ -45,6 +45,134 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Extensions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "E:\\GitHub\\net_Core_sample\\net_Core_sample\\Core_Mvc_Sample\\Core_Mvc_Sample.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "E:\\GitHub\\net_Core_sample\\net_Core_sample\\Core_Mvc_Sample\\Core_Mvc_Sample.csproj",
+        "projectName": "Core_Mvc_Sample",
+        "projectPath": "E:\\GitHub\\net_Core_sample\\net_Core_sample\\Core_Mvc_Sample\\Core_Mvc_Sample.csproj",
+        "packagesPath": "C:\\Users\\clip-815\\.nuget\\packages\\",
+        "outputPath": "E:\\GitHub\\net_Core_sample\\net_Core_sample\\Core_Mvc_Sample\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\clip-815\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.telerik.com/nuget": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "E:\\GitHub\\net_Core_sample\\net_Core_sample\\BaseFramework\\BaseFramework.csproj": {
+                "projectPath": "E:\\GitHub\\net_Core_sample\\net_Core_sample\\BaseFramework\\BaseFramework.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Http.Abstractions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Http.Extensions": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[5.0.5, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

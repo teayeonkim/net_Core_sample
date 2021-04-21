@@ -14,13 +14,14 @@ namespace BaseFramework
             Microsoft.Extensions.Configuration
             Microsoft.Extensions.Configuration.Abstractions 
             Microsoft.Extensions.Configuration.Json
+            Microsoft.AspNetCore.Http
             
             패키지 설치 필요
         */
         //클립 암호화키 AES
         public readonly string _CryptoKey_AES = string.Empty;
         //SIte 엔티티
-        public readonly string _Site_Clipservice = string.Empty;
+        public readonly string _Mail_Db = string.Empty;
         //디버깅 여부
         public readonly string _Mode = string.Empty;
         
@@ -41,7 +42,7 @@ namespace BaseFramework
             _CryptoKey_AES = root.GetSection("CryptoKey_AES").Value;
 
             //사이트 엔티티 추출
-            _Site_Clipservice = root.GetSection("ConnectiongStrings:Site_Clipservice").Value;
+            _Mail_Db = root.GetSection("ConnectiongStrings:Mail_Db").Value;
 
             //디버깅 모드여부 추출
             _Mode = root.GetSection("Mode").Value;
@@ -54,9 +55,9 @@ namespace BaseFramework
         }
 
         //사이트 엔티티 추출
-        public string Site_Clipservice
+        public string Mail_Db
         {
-            get => _Site_Clipservice;
+            get => _Mail_Db;
         }
 
         //디버깅 여부 
