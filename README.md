@@ -1,8 +1,6 @@
 # net_Core_sample
 .Net Core 5.0 Sample 소스 입니다.
 
-개인 .net Core 테스트 프로젝트 입니다.
-
    기능 업데이트 중입니다.   
 
       1. Aes 256 암호화 처리
