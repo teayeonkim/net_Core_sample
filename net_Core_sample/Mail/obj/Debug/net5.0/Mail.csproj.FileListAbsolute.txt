@@ -1,0 +1,11 @@
+E:\GitHub\net_Core_sample\net_Core_sample\Mail\obj\Debug\net5.0\Mail.GeneratedMSBuildEditorConfig.editorconfig
+E:\GitHub\net_Core_sample\net_Core_sample\Mail\obj\Debug\net5.0\Mail.AssemblyInfoInputs.cache
+E:\GitHub\net_Core_sample\net_Core_sample\Mail\obj\Debug\net5.0\Mail.AssemblyInfo.cs
+E:\GitHub\net_Core_sample\net_Core_sample\Mail\obj\Debug\net5.0\Mail.csproj.CoreCompileInputs.cache
+E:\GitHub\net_Core_sample\net_Core_sample\Mail\bin\Debug\net5.0\Mail.deps.json
+E:\GitHub\net_Core_sample\net_Core_sample\Mail\bin\Debug\net5.0\Mail.dll
+E:\GitHub\net_Core_sample\net_Core_sample\Mail\bin\Debug\net5.0\ref\Mail.dll
+E:\GitHub\net_Core_sample\net_Core_sample\Mail\bin\Debug\net5.0\Mail.pdb
+E:\GitHub\net_Core_sample\net_Core_sample\Mail\obj\Debug\net5.0\Mail.dll
+E:\GitHub\net_Core_sample\net_Core_sample\Mail\obj\Debug\net5.0\ref\Mail.dll
+E:\GitHub\net_Core_sample\net_Core_sample\Mail\obj\Debug\net5.0\Mail.pdb

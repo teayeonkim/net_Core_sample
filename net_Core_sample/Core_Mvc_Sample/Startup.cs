@@ -1,12 +1,19 @@
+using Mail;
+using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.WebEncoders;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text.Encodings.Web;
+using System.Text.Unicode;
 using System.Threading.Tasks;
 
 namespace Core_Mvc_Sample
@@ -15,7 +22,15 @@ namespace Core_Mvc_Sample
     {
         public Startup(IConfiguration configuration)
         {
-            Configuration = configuration;
+            var builder = new ConfigurationBuilder()
+            #if DEBUG //디버깅 모드
+                            .AddJsonFile("appsettings.Development.json", optional: true)
+            #else
+                            .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true)
+            #endif
+          .AddEnvironmentVariables();
+
+            Configuration = builder.Build();
         }
 
         public IConfiguration Configuration { get; }
@@ -24,6 +39,53 @@ namespace Core_Mvc_Sample
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            #region 데이터 베이스 설정 진행
+            string Mail_ConnString = Configuration["ConnectiongStrings:Mail_Db"];
+
+            //EF Core  DB 접속 경로 처리
+            services.AddDbContext<MailContext>((options) =>
+            {
+                options.UseSqlServer(Mail_ConnString);
+            });
+
+            #endregion
+
+            #region 세션 설정 진행
+            services.AddDistributedMemoryCache();
+
+            services.AddSession(options =>
+            {
+                options.Cookie.Name = ".Session";
+                options.IdleTimeout = TimeSpan.FromMinutes(10);
+                options.Cookie.HttpOnly = true;
+                options.Cookie.IsEssential = true;
+            });
+
+            #endregion
+
+            #region 쿠키 설정 진행
+            services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme)
+            .AddCookie(options =>
+            {
+                options.Cookie.SameSite = SameSiteMode.None;
+                options.Cookie.SecurePolicy = CookieSecurePolicy.Always;
+                options.Cookie.IsEssential = true;
+            });
+
+            ///쿠기 관련 httpcontext 처리 진행 하기.. 
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddHttpContextAccessor();
+
+            #endregion
+
+            #region 한글깨짐 현상 처리
+            services.Configure<WebEncoderOptions>(options =>
+            {
+                options.TextEncoderSettings = new TextEncoderSettings(UnicodeRanges.All); // 한글이 인코딩되는 문제 해결
+            });
+            #endregion
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
