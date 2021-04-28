@@ -9,3 +9,4 @@ E:\GitHub\net_Core_sample\net_Core_sample\Mail\obj\Debug\net5.0\Mail.csproj.Core
 E:\GitHub\net_Core_sample\net_Core_sample\Mail\obj\Debug\net5.0\Mail.dll
 E:\GitHub\net_Core_sample\net_Core_sample\Mail\obj\Debug\net5.0\ref\Mail.dll
 E:\GitHub\net_Core_sample\net_Core_sample\Mail\obj\Debug\net5.0\Mail.pdb
+E:\GitHub\net_Core_sample\net_Core_sample\Mail\obj\Debug\net5.0\Mail.csprojAssemblyReference.cache
