@@ -12,3 +12,4 @@ E:\GitHub\net_Core_sample\net_Core_sample\BaseFramework\obj\Debug\net5.0\BaseFra
 E:\GitHub\net_Core_sample\net_Core_sample\BaseFramework\obj\Debug\net5.0\ref\BaseFramework.dll
 E:\GitHub\net_Core_sample\net_Core_sample\BaseFramework\obj\Debug\net5.0\BaseFramework.pdb
 E:\GitHub\net_Core_sample\net_Core_sample\BaseFramework\obj\Debug\net5.0\BaseFramework.genruntimeconfig.cache
+E:\GitHub\net_Core_sample\net_Core_sample\BaseFramework\obj\Debug\net5.0\BaseFramework.csprojAssemblyReference.cache

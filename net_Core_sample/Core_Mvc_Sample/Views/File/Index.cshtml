@@ -1,0 +1,43 @@
+﻿
+@{
+}
+
+<script type="text/javascript">
+
+    var Message = "@(ViewBag.Message)";
+
+    if (Message != null) {
+        alert(Message);
+    };
+</script>
+
+
+
+<form name="fo" method="post" action="@Url.Action("FileUploadAmazonProc")" enctype="multipart/form-data">
+
+    <input type="file" name="upFile" id="upFile" />
+    <input type="text" name="path" value="/test" />
+    <input type="text" name="fileExtType" value="jpg" />
+    <button id="test" type="submit"> 파일 업로드</button>
+
+</form>
+
+
+
+<form name="fo" method="post" action="@Url.Action("FileUploadAmazonProc")" enctype="multipart/form-data">
+
+    <input type="file" name="upFile" id="upFile" />
+    <input type="text" name="path" value="/test" />
+    <input type="text" name="fileExtType" value="jpg" />
+    <input type="text" name="maxWidth" value="100" />
+    <input type="text" name="maxHeight" value="100" />
+    <input type="text" name="resizeRatio" value="true" />
+    @*비율에 맞게 리사이징 여부*@
+    <button id="test" type="submit"> 이미지 리사이징 업로드</button>
+
+</form>
+
+
+
+
+

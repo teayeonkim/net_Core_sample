@@ -156,3 +156,10 @@ E:\GitHub\net_Core_sample\net_Core_sample\Core_Mvc_Sample\bin\Debug\net5.0\Mail.
 E:\GitHub\net_Core_sample\net_Core_sample\Core_Mvc_Sample\obj\Debug\net5.0\Core_Mvc_Sample.Views.pdb
 E:\GitHub\net_Core_sample\net_Core_sample\Core_Mvc_Sample\obj\Debug\net5.0\Core_Mvc_Sample.csproj.CopyComplete
 E:\GitHub\net_Core_sample\net_Core_sample\Core_Mvc_Sample\obj\Debug\net5.0\Core_Mvc_Sample.genruntimeconfig.cache
+E:\GitHub\net_Core_sample\net_Core_sample\Core_Mvc_Sample\bin\Debug\net5.0\AWSSDK.Core.dll
+E:\GitHub\net_Core_sample\net_Core_sample\Core_Mvc_Sample\bin\Debug\net5.0\AWSSDK.S3.dll
+E:\GitHub\net_Core_sample\net_Core_sample\Core_Mvc_Sample\bin\Debug\net5.0\System.Drawing.Common.dll
+E:\GitHub\net_Core_sample\net_Core_sample\Core_Mvc_Sample\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\GitHub\net_Core_sample\net_Core_sample\Core_Mvc_Sample\bin\Debug\net5.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+E:\GitHub\net_Core_sample\net_Core_sample\Core_Mvc_Sample\obj\Debug\net5.0\Razor\Views\File\FileUploadAmazonProc.cshtml.g.cs
+E:\GitHub\net_Core_sample\net_Core_sample\Core_Mvc_Sample\obj\Debug\net5.0\Razor\Views\File\Index.cshtml.g.cs
